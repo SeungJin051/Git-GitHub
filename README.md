@@ -134,9 +134,19 @@ $ git init
 ### 기존 저장소를 복사하기
 서버 등 다른 컴퓨터의 프로젝트를 로컬 컴퓨터로 복사
 기존 저장소를 복사해 올 디렉토리로 이동 후 다음 명령 실행
-$ git clone [url]
-• 예) userhome 디렉토리에서 다음 명령 실행
-• $ git clone https://github.com/SeungJin051/project
-• Userhome 디렉토리에 project 이름의 Git 저장소가 복사됨
-다른 디렉토리 이름으로도 저장할 수 있다
-• $ git clone [url] newDirectory
+$ git clone [url] 
+  #### 예) userhome 디렉토리에서 다음 명령 실행
+  #### $ git clone https://github.com/SeungJin051/project
+  #### Userhome 디렉토리에 project 이름의 Git 저장소가 복사됨
+  #### 다른 디렉토리 이름으로도 저장할 수 있다 
+  #### $ git clone [url] newDirectory
+
+# 직접 해보기.
+
+<img width="1190" alt="스크린샷 2022-10-05 오전 10 45 32" src="https://user-images.githubusercontent.com/83889135/193997284-0025397b-3f23-4690-aafb-ee938606aa57.png">
+----
+<img width="668" alt="스크린샷 2022-10-05 오전 10 46 32" src="https://user-images.githubusercontent.com/83889135/193997324-ac0cf46f-1b55-4fe1-bcf7-a48b365d0d00.png">
+----
+<img width="668" alt="스크린샷 2022-10-05 오전 10 49 10" src="https://user-images.githubusercontent.com/83889135/193997362-4b246206-3303-4540-8666-dc2fe83db4c2.png">
+
+
