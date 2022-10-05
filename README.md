@@ -143,6 +143,8 @@ $ git clone [url]
   #### 다른 디렉토리 이름으로도 저장할 수 있다 
   #### $ git clone [url] newDirectory
 
+> 출처 오픈소스소프트웨어실습 교수 윤혜정
+
 # 직접 커밋 
 
 <img width="1190" alt="스크린샷 2022-10-05 오전 10 45 32" src="https://user-images.githubusercontent.com/83889135/193997284-0025397b-3f23-4690-aafb-ee938606aa57.png">
@@ -150,6 +152,3 @@ $ git clone [url]
 <img width="668" alt="스크린샷 2022-10-05 오전 10 46 32" src="https://user-images.githubusercontent.com/83889135/193997324-ac0cf46f-1b55-4fe1-bcf7-a48b365d0d00.png">
 ----
 <img width="668" alt="스크린샷 2022-10-05 오전 10 49 10" src="https://user-images.githubusercontent.com/83889135/193997362-4b246206-3303-4540-8666-dc2fe83db4c2.png">
-
-
-> 출처 오픈소스소프트웨어실습 교수 윤혜정
