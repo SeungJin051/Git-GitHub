@@ -22,12 +22,13 @@
  Git에서 실행하기 위한 어떤 명령들을 사용할 때는 CLI를 사용 (명령어 사용)
   프로젝트의 상태를 Git상에서 자세히 살펴보아야 할 때는 GUI를 사용 (시각적)
 
-## Git 파일의 3가지 상태 ***
-<img width="711" alt="스크린샷 2022-10-05 오후 3 05 33" src="https://user-images.githubusercontent.com/83889135/193992247-07217bd6-a3e9-42b4-8a26-98a2bc546a25.png">
- 
+## Git 파일의 3가지 상태 *** 
  + Committed: 데이터가 로컬 데이터베이스에 안전하게 저장되었음
  + Modified: 수정했으나 아직 로컬 데이터베이스에 커밋(commit)하지 않은 것
  + Staged: 현재 수정한 파일을 곧 커밋 할 것이라고 표시한 상태를 의미
+ 
+<img width="711" alt="스크린샷 2022-10-05 오후 3 05 33" src="https://user-images.githubusercontent.com/83889135/193992247-07217bd6-a3e9-42b4-8a26-98a2bc546a25.png">
+
 ### Git 디렉토리 
    + Working Director : 지금 작업하는 컴퓨터의 특정 디렉토리, 리모트 서버 등에서 특정 버전을 가져와(checkout) 만든 작업용 디렉토리
    + Git Directory: (Git의 핵심) : 보통 Working Directory의 sub directory (.git)로 생성됨 프로젝트의 메타데이터와 객체 데이터베이스를 저장 하는 곳
