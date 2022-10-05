@@ -28,7 +28,11 @@
  + Committed: 데이터가 로컬 데이터베이스에 안전하게 저장되었음
  + Modified: 수정했으나 아직 로컬 데이터베이스에 커밋(commit)하지 않은 것
  + Staged: 현재 수정한 파일을 곧 커밋 할 것이라고 표시한 상태를 의미
-
+### Git 디렉토리 
+   + Working Director : 지금 작업하는 컴퓨터의 특정 디렉토리, 리모트 서버 등에서 특정 버전을 가져와(checkout) 만든 작업용 디렉토리
+   + Git Directory: (Git의 핵심) : 보통 Working Directory의 sub directory (.git)로 생성됨 프로젝트의 메타데이터와 객체 데이터베이스를 저장 하는 곳
+   + Staging Area: (←실제 directory가 아니고 특정 파일의 개념적 용도를 말함) Git directory에 저장된 단순 파일이며, 곧 커밋할 파일 정보를 저장
+ 
 ## Git 최초 설정 
  + 깃허브 계정과는 별개.
  
