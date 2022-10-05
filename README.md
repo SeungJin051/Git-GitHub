@@ -104,7 +104,7 @@
  
  git config --global user.name "Your Name" 
 
- git config --global user.email "your@mail.com"
+ git config --global user.email "your@email.com"
 
 ## 프로젝트 생성 & Git 관리 
  git init = 로컬 Git 저장소를 설정합니다. 
