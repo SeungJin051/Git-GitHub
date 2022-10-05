@@ -55,33 +55,6 @@
    + Git Directory: (Git의 핵심) : 보통 Working Directory의 sub directory (.git)로 생성됨 프로젝트의 메타데이터와 객체 데이터베이스를 저장 하는 곳
    + Staging Area: (←실제 directory가 아니고 특정 파일의 개념적 용도를 말함) Git directory에 저장된 단순 파일이며, 곧 커밋할 파일 정보를 저장
  
-## Git 최초 설정 
- + 깃허브 계정과는 별개.
- 
- git config --global user.name "Your Name" 
-
- git config --global user.email "your@mail.com"
-
-## 프로젝트 생성 & Git 관리 
- git init = 로컬 Git 저장소를 설정합니다. 
- 
- git status = 현재 상태 확인
- 
- git add = 현재 상태 추적
- 
- git commit = 현재 상태 저장
- 
- git config = git 설정(사용자 정보 설정, 설정 확인 등)
- 
- git diff = 이전 버전과 비교해 다른 점 나타냄
- 
- git log = 로그 상태 보기
- 
-  ### 버전 관리할 파일을 git 명령으로 추가하고 커밋해야 관리가 시작됨
-   #### $ git add *.c // 관리할 파일 추가
-   #### $ git add readme.txt // 관리할 파일 추가
-   #### $ git commit -m 'first version' // 저장
-
  ## 과거로 돌아가는 방법 2가지 Reset VS Revert
   Reset = 시간을 과거로 되돌림, 과거로 돌아간 다음 이후 행적을 히스토리에서 지움
   Revert = 과거로 돌아간 다음 이후 행적을 히스토리에서 지우지 않고 이 때의 변화를 거꾸로 수행하는 캡슐을 하나 넣음으로써
@@ -124,4 +97,46 @@
   + 각기 다른 패키지에서 공통 취약점 및 노출로 알려진 보안 경보
   + README == MarkDown 프로젝트 소개글
 
+## Git 최초 설정 
+ + 깃허브 계정과는 별개.
+ 
+ git config --global user.name "Your Name" 
 
+ git config --global user.email "your@mail.com"
+
+## 프로젝트 생성 & Git 관리 
+ git init = 로컬 Git 저장소를 설정합니다. 
+ 
+ git status = 현재 상태 확인
+ 
+ git add = 현재 상태 추적
+ 
+ git commit = 현재 상태 저장
+ 
+ git config = git 설정(사용자 정보 설정, 설정 확인 등)
+ 
+ git diff = 이전 버전과 비교해 다른 점 나타냄
+ 
+ git log = 로그 상태 보기
+
+## Git 저장소 만들기 
+
+프로젝트 디렉토리로 이동하여 다음 명령 실행
+$ git init
+  ... 아직 프로젝트 디렉토리의 어떤 파일도 버전 관리가 시작되지 않았음
+### 버전 관리할 파일을 git 명령으로 추가하고 커밋해야 관리가 시작됨
+ $ git add *.c // 관리할 파일 추가
+ $ git add readme.txt // 관리할 파일 추가
+ $ git commit -m 'first version' // 저장
+
+<img width="208" alt="스크린샷 2022-10-05 오후 3 39 19" src="https://user-images.githubusercontent.com/83889135/193996707-c00e9eea-4715-4606-a18f-1d9a5033ae52.png">
+
+### 기존 저장소를 복사하기
+서버 등 다른 컴퓨터의 프로젝트를 로컬 컴퓨터로 복사
+기존 저장소를 복사해 올 디렉토리로 이동 후 다음 명령 실행
+$ git clone [url]
+• 예) userhome 디렉토리에서 다음 명령 실행
+• $ git clone https://github.com/SeungJin051/project
+• Userhome 디렉토리에 project 이름의 Git 저장소가 복사됨
+다른 디렉토리 이름으로도 저장할 수 있다
+• $ git clone [url] newDirectory
