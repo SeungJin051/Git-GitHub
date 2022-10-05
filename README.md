@@ -1,5 +1,9 @@
 # Git-GitHub
 
+![git](https://user-images.githubusercontent.com/83889135/193983137-4fe8dd95-7fa2-4407-8b87-a75ddb604ef1.png)
+![github](https://user-images.githubusercontent.com/83889135/193983166-89321ac1-8e48-4e29-afbd-643b72148567.png)
+
+
 # Git을 배워야 하는 이유!
  Git = VCS(Version Control System)
  시간과 차원을 종횡으로 넘나든다
