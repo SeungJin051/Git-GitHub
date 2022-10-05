@@ -9,7 +9,27 @@
  예로 버전2에서 버전1으로 돌아가야하는 경우가 생기면 프로젝트의 내용들을 다른 폴더 인것처럼 변경사항을 자유롭게 이듕가능 
  여러 개발자들이 협업해서 함께 소프트웨어를 만들어가는데 있어 중요한 기능들을 지원한다.
 
-## 분산 VCS (Distributed VCS: DVCS)
+## VCS..
+### 로컬 VCS (Distributed VCS: DVCS)
+
+<img width="447" alt="스크린샷 2022-10-05 오후 3 19 18" src="https://user-images.githubusercontent.com/83889135/193994006-594d84d9-9472-4480-b01e-eea71c905a10.png">
+
+ + 사용하는 컴퓨터(local computer)에 간단한 데이터베이스를 만들어 파일 변경 정보를 기록 관리
+ + 필요한 시점에 DB에서 특정 버전을 불러와서 사용
+ + 다른 개발자들과 함께 사용하기에는 문제가 많음
+
+### 중앙집중식 VCS (Centralized VCS: CVCS)
+
+<img width="458" alt="스크린샷 2022-10-05 오후 3 21 11" src="https://user-images.githubusercontent.com/83889135/193994219-4a404a65-6d93-4dcb-bd84-df58ecc6445f.png">
+
+ + 파일을 관리하는 서버(CVCS Server)가 별도로 있고 클라이언트가 중앙 서버에서 파일을 받아서 사용(Checkout).
+ + 다른 개발자들과 함께 작업하기에 매우 편리함 ex) CVS, Subversion, Perforce...
+ + 중앙 서버에 문제 발생시 작업 중단, 모든 자료 손실 등 치명적 한계가 있음
+
+### 분산 VCS (Distributed VCS: DVCS)
+
+<img width="458" alt="스크린샷 2022-10-05 오후 3 25 49" src="https://user-images.githubusercontent.com/83889135/193994916-5a3e655e-c899-408c-bd39-b8ba8652bae6.png">
+
  + Client는 단순히 파일의 마지막 스냅샷을 복사하지 않고 그냥 저장소를 전부 복제
  + 서버에 문제가 생겨도 local 또는 다른 client를 통해 완벽한 복원 가능
  + 동시에 다양한 그룹과 다양한 방법 으로 협업 가능
@@ -22,7 +42,8 @@
  Git에서 실행하기 위한 어떤 명령들을 사용할 때는 CLI를 사용 (명령어 사용)
   프로젝트의 상태를 Git상에서 자세히 살펴보아야 할 때는 GUI를 사용 (시각적)
 
-## Git 파일의 3가지 상태 *** 
+## 매우중요 (⭐️⭐️⭐️) 
+### Git 파일의 3가지 상태
  + Committed: 데이터가 로컬 데이터베이스에 안전하게 저장되었음
  + Modified: 수정했으나 아직 로컬 데이터베이스에 커밋(commit)하지 않은 것
  + Staged: 현재 수정한 파일을 곧 커밋 할 것이라고 표시한 상태를 의미
@@ -42,14 +63,25 @@
  git config --global user.email "your@mail.com"
 
 ## 프로젝트 생성 & Git 관리 
- git init = 로컬 Git 저장소를 설정합니다.
-
+ git init = 로컬 Git 저장소를 설정합니다. 
+ 
  git status = 현재 상태 확인
  
  git add = 현재 상태 추적
  
  git commit = 현재 상태 저장
  
+ git config = git 설정(사용자 정보 설정, 설정 확인 등)
+ 
+ git diff = 이전 버전과 비교해 다른 점 나타냄
+ 
+ git log = 로그 상태 보기
+ 
+  ### 버전 관리할 파일을 git 명령으로 추가하고 커밋해야 관리가 시작됨
+   #### $ git add *.c // 관리할 파일 추가
+   #### $ git add readme.txt // 관리할 파일 추가
+   #### $ git commit -m 'first version' // 저장
+
  ## 과거로 돌아가는 방법 2가지 Reset VS Revert
   Reset = 시간을 과거로 되돌림, 과거로 돌아간 다음 이후 행적을 히스토리에서 지움
   Revert = 과거로 돌아간 다음 이후 행적을 히스토리에서 지우지 않고 이 때의 변화를 거꾸로 수행하는 캡슐을 하나 넣음으로써
