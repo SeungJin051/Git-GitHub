@@ -12,21 +12,21 @@
  예로 버전2에서 버전1으로 돌아가야하는 경우가 생기면 프로젝트의 내용들을 다른 폴더 인것처럼 변경사항을 자유롭게 이듕가능 
  여러 개발자들이 협업해서 함께 소프트웨어를 만들어가는데 있어 중요한 기능들을 지원한다.
 
-# CLI VS GUI
+## CLI VS GUI
  CLI(Command Line Interface) = 명령줄을 입력하여 사용하는 것 (Ex. cmd, 터미널)
  GUI(Graphical User Interface) = 그래픽 요소를 활용한 인터페이스
 
  Git에서 실행하기 위한 어떤 명령들을 사용할 때는 CLI를 사용 (명령어 사용)
   프로젝트의 상태를 Git상에서 자세히 살펴보아야 할 때는 GUI를 사용 (시각적)
 
-# Git 최초 설정 
+## Git 최초 설정 
  + 깃허브 계정과는 별개.
  
  git config --global user.name "Your Name" 
 
  git config --global user.email "your@mail.com"
 
-# 프로젝트 생성 & Git 관리 
+## 프로젝트 생성 & Git 관리 
  git init = 로컬 Git 저장소를 설정합니다.
 
  git status = 현재 상태 확인
@@ -35,20 +35,20 @@
  
  git commit = 현재 상태 저장
  
- # 과거로 돌아가는 방법 2가지 Reset VS Revert
+ ## 과거로 돌아가는 방법 2가지 Reset VS Revert
   Reset = 시간을 과거로 되돌림, 과거로 돌아간 다음 이후 행적을 히스토리에서 지움
   Revert = 과거로 돌아간 다음 이후 행적을 히스토리에서 지우지 않고 이 때의 변화를 거꾸로 수행하는 캡슐을 하나 넣음으로써
   예시) 추가한 게 있으면 삭제하고, 변경이 있으면 수행
   *협업시 한번 공유된 코드는 Revert를 이용하여 되돌려야 충돌이 되지않는다.*
   
- # Branch 가지 (다른 차원)
+ ## Branch 가지 (다른 차원)
   + 프로젝트를 하나 이상의 모습으로 관리해야 할 때
       + ex) 실배포용, 테스트서버용, 새로운 시도용 
   
   + 여러 작업들이 각각 독립되어 진행될 때
       + ex) 신기능1, 신기능2, 코드개선, 긴급수정...
       + 각각의 차원에서 작업한 뒤 확정된 것을 메인 차원에 통합한다. 
- # Branch 사용법 
+ ## Branch 사용법 
   추가예정.
  ![img](https://user-images.githubusercontent.com/83889135/193982874-52e1f987-a1b5-4625-b6da-ace9a0b54639.gif)
 
