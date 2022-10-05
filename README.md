@@ -24,9 +24,11 @@
 
 ## Git 파일의 3가지 상태 ***
 <img width="711" alt="스크린샷 2022-10-05 오후 3 05 33" src="https://user-images.githubusercontent.com/83889135/193992247-07217bd6-a3e9-42b4-8a26-98a2bc546a25.png">
+ 
  + Committed: 데이터가 로컬 데이터베이스에 안전하게 저장되었음
  + Modified: 수정했으나 아직 로컬 데이터베이스에 커밋(commit)하지 않은 것
  + Staged: 현재 수정한 파일을 곧 커밋 할 것이라고 표시한 상태를 의미
+
 ## Git 최초 설정 
  + 깃허브 계정과는 별개.
  
