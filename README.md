@@ -56,6 +56,10 @@
    + Staging Area: (←실제 directory가 아니고 특정 파일의 개념적 용도를 말함) Git directory에 저장된 단순 파일이며, 곧 커밋할 파일 정보를 저장
  
  ## 과거로 돌아가는 방법 2가지 Reset VS Revert
+
+![git-reset-vs-git-revert](https://user-images.githubusercontent.com/83889135/194001933-8cc96054-0b46-4346-8704-e86afe2b60a2.jpeg)
+ 
+ 
   Reset = 시간을 과거로 되돌림, 과거로 돌아간 다음 이후 행적을 히스토리에서 지움 <br>
   Revert = 과거로 돌아간 다음 이후 행적을 히스토리에서 지우지 않고 이 때의 변화를 거꾸로 수행하는 캡슐을 하나 넣음으로써
   예시) 추가한 게 있으면 삭제하고, 변경이 있으면 수행
