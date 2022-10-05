@@ -143,7 +143,7 @@ $ git clone [url]
   #### 다른 디렉토리 이름으로도 저장할 수 있다 
   #### $ git clone [url] newDirectory
 
-# 직접 해보기.
+# 직접 커밋 
 
 <img width="1190" alt="스크린샷 2022-10-05 오전 10 45 32" src="https://user-images.githubusercontent.com/83889135/193997284-0025397b-3f23-4690-aafb-ee938606aa57.png">
 ----
