@@ -1,8 +1,5 @@
 # Git-GitHub
-
-![git](https://user-images.githubusercontent.com/83889135/193983137-4fe8dd95-7fa2-4407-8b87-a75ddb604ef1.png)
-![github](https://user-images.githubusercontent.com/83889135/193983166-89321ac1-8e48-4e29-afbd-643b72148567.png)
-
+![gitgithub](https://user-images.githubusercontent.com/83889135/193991354-5b8af519-a28b-4862-bdbb-169b01a190c8.png)
 
 # Git을 배워야 하는 이유, 버전들을 만들어 시간과 차원을 제어하는 방법
  Git = VCS(Version Control System)
@@ -12,6 +9,12 @@
  예로 버전2에서 버전1으로 돌아가야하는 경우가 생기면 프로젝트의 내용들을 다른 폴더 인것처럼 변경사항을 자유롭게 이듕가능 
  여러 개발자들이 협업해서 함께 소프트웨어를 만들어가는데 있어 중요한 기능들을 지원한다.
 
+## 분산 VCS (Distributed VCS: DVCS)
+ + Client는 단순히 파일의 마지막 스냅샷을 복사하지 않고 그냥 저장소를 전부 복제
+ + 서버에 문제가 생겨도 local 또는 다른 client를 통해 완벽한 복원 가능
+ + 동시에 다양한 그룹과 다양한 방법 으로 협업 가능
+ + DVCS
+
 ## CLI VS GUI
  CLI(Command Line Interface) = 명령줄을 입력하여 사용하는 것 (Ex. cmd, 터미널)
  GUI(Graphical User Interface) = 그래픽 요소를 활용한 인터페이스
@@ -19,6 +22,11 @@
  Git에서 실행하기 위한 어떤 명령들을 사용할 때는 CLI를 사용 (명령어 사용)
   프로젝트의 상태를 Git상에서 자세히 살펴보아야 할 때는 GUI를 사용 (시각적)
 
+## Git 파일의 3가지 상태 ***
+<img width="711" alt="스크린샷 2022-10-05 오후 3 05 33" src="https://user-images.githubusercontent.com/83889135/193992247-07217bd6-a3e9-42b4-8a26-98a2bc546a25.png">
+ + Committed: 데이터가 로컬 데이터베이스에 안전하게 저장되었음
+ + Modified: 수정했으나 아직 로컬 데이터베이스에 커밋(commit)하지 않은 것
+ + Staged: 현재 수정한 파일을 곧 커밋 할 것이라고 표시한 상태를 의미
 ## Git 최초 설정 
  + 깃허브 계정과는 별개.
  
@@ -62,6 +70,11 @@
  협업시 커밋을 함으로써 원활한 버전공유가 가능하다. (최신버전을 다운로드)
  
 ## 원격 저장소 
+ Git Repository는 Git으로 관리하는 프로젝트 저장소
+ + Local Repository : 본인의 컴퓨터에 저장된 로컬 버전의 프로젝트 저장소.
+ + Remote Repository : 로컬이 아닌 외부 서버의 프로젝트 저장소.
+ + 팀 단위의 작업을 진행할 때 유용합니다. 이 곳에서는 프로젝트 코드를 공유할 수 있고, 다른 사람의 코드를 확인할 수 있습니다. 또한, 
+   로컬 버전 의 프로젝트와 병합, 변경 사항 등을 적용할 수 있습니다.
 
  ## 깃허브의 주요 지원 
   + 깃허브는 대부분 코드를 위해 사용된다.
